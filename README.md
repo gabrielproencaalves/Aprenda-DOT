@@ -10,7 +10,7 @@ inúmeras vantagens como:
 - Fácil memorização;
 - Alta personalização;
 - Geração rápida de documentos;
-- Suportada por diversos programas;
+- Compatibilidade com diversos programas;
 - Facilita o versionamento de documentos;
 - Suporta diversos formatos de documentos (pdf, png, jpeg, gif, svg e outros);
 
