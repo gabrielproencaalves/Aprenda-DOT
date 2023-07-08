@@ -1,0 +1,23 @@
+    Guia Introdutório de DOT
+
+Introdução (Prólogo).
+  O que é DOT -- *semelhante ao readme.
+  Origem histórica da ferramenta. (História)
+  Empregabilidade nos dias atuais (Empregabilidade) -- *documentação oficial.
+
+Desenvolvimento (Primeiros passos).
+  Elementos básicos (Elementos).
+    graph (digraph/graph).
+    node.
+    edge.
+
+  Estruturando diagramas (Estrutura).
+    subgraph.
+    rank
+    rankdir
+
+  Embelezando diagramas (Aparência).
+    Atributos.
+      graph.
+      node.
+      edge.
