@@ -2,22 +2,25 @@
 
 Introdução (Prólogo).
   O que é DOT -- *semelhante ao readme.
-  Origem histórica da ferramenta. (História)
   Empregabilidade nos dias atuais (Empregabilidade) -- *documentação oficial.
 
 Desenvolvimento (Primeiros passos).
   Elementos básicos (Elementos).
+    Antes de construirmos os nossos diagramas, precisamo entender quais elementos básicos
+que compõem um documento DOT. 
     graph (digraph/graph).
     node.
     edge.
 
-  Estruturando diagramas (Estrutura).
+  Estruturando diagramas (Estruturando o documento).
     subgraph.
     rank
     rankdir
 
-  Embelezando diagramas (Aparência).
+  Embelezando diagramas (Personalizando o documento).
     Atributos.
       graph.
       node.
       edge.
+  
+  Entendendo a documentação.
