@@ -7,7 +7,7 @@ Introdução (Prólogo).
 Desenvolvimento (Primeiros passos).
   Elementos básicos (Elementos).
     Antes de construirmos os nossos diagramas, precisamo entender quais elementos básicos
-que compõem um documento DOT. 
+que compõem um documento DOT.
     graph (digraph/graph).
     node.
     edge.
