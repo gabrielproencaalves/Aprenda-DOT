@@ -1,0 +1,23 @@
+graph {
+  rank=same
+  rankdir=TB
+  ranksep=0.3
+  nodesep=0.3
+  node [
+    fontname=monospaced
+    shape=none
+    width=0.1
+    height=0.1
+  ]
+  
+  H1 -- C
+  subgraph {
+    rank=same
+    rankdir=LR
+    H2 -- C -- OH
+  }
+  C -- H
+
+  H1 [label=H]
+  H2 [label=H]
+}
