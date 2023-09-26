@@ -1,7 +1,9 @@
-.TL
+.nr PS 12p
 
+.TL
 Guia introdutório de
-.I DOT
+.I
+DOT
 
 .AU
 Gabriel Proença Alves
@@ -21,7 +23,7 @@ documentos contendo redes de informações, informações
 estruturadas, grafos descritivos e diagramas.
 
 .PP
-Uma Das principais características da linguagem é a sua
+Uma das principais características da linguagem é a sua
 simplicidade. Por meio dela, podemos escrever documentos
 de forma prática e personalizável, sem gastarmos muito
 tempo com documentações exaustivas.
@@ -59,8 +61,6 @@ técnicas.
 Isso nos mostra a importância do estudo, e do domínio,
 destas ferramentas para qualquer tipo de profissional
 relacionado aos ramos da tecnologia.
-
-.bp
 
 .NH 1
 Os primeiros passos
@@ -101,3 +101,69 @@ Os nodes...
 .I edge
 .PP
 Os edges...
+
+\" inserir aqui, uma imagem
+\" explicativa sobre os assuntos
+\" anteriores
+
+.NH 1
+Estruturando o documento
+.PP
+Até o momento...
+
+.NH 2
+.I
+subgraph
+.PP
+O subgraph...
+
+.NH 2
+.I
+rank
+.PP
+O atributo rank...
+
+.NH 2
+.I
+rankdir
+.PP
+O atributo rankdir...
+
+.NH 1
+Personalizando o documento
+.PP
+A partir de agora...
+
+
+.NH 2
+Atributos
+.PP
+Os atributos são...
+
+.IP
+\(bu
+.I
+graph
+.PP
+Os atributos dos grafos...
+
+.IP
+\(bu
+.I
+node
+.PP
+Os atributos dos nós...
+
+.IP
+\(bu
+.I
+edge
+.PP
+Os atributos das arestas...
+
+.NH 1
+Entendendo a documentação
+.PP
+Primeiramente, eu gostaria de lhe dar os parabéns
+por ter aprendido os conceitos e chegado até aqui...
+(draft)
