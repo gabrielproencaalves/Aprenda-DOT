@@ -1,10 +1,9 @@
-.nr PS 12p
+.fam H
 
 .TL
 Guia introdutório de
 .I
 DOT
-
 .AU
 Gabriel Proença Alves
 
@@ -31,6 +30,7 @@ tempo com documentações exaustivas.
 .PP
 Além disso, ela facilita o versionamento de documentos,
 uma vez que qualquer código
+
 .I dot
 pode ser armazenado em um arquivo de texto simples.
 
@@ -39,8 +39,8 @@ Um arquivo
 .I dot
 é lido e interpretado por um conjunto de ferramentas
 chamado
-.I Graphviz
-, das quais podem gerar documentos de diversos formatos.
+.I Graphviz,
+das quais podem gerar documentos de diversos formatos.
 Esses utilitários consomem pouquíssimos recursos e são
 capazes de manipular grafos complexos em pouco tempo.
 
@@ -133,7 +133,6 @@ O atributo rankdir...
 Personalizando o documento
 .PP
 A partir de agora...
-
 
 .NH 2
 Atributos
