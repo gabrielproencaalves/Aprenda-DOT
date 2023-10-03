@@ -62,6 +62,7 @@ Isso nos mostra a abrangente utilidade
 da ferramenta e o seu valor em situações
 reais.
 
+.bp
 .NH 1
 Os primeiros passos
 
@@ -78,19 +79,79 @@ compõem um documento
 .I graph
 
 .PP
-Os grafos...
+Na linguagem
+.I dot,
+o termo grafo faz referência a área onde pontos
+(vértices) e ligações (arestas) são inseridas e
+estruturadas. Neles, é possivel definir como os nós
+e arestas serão posicionados, além de outras
+configurações mais sofisticadas. Todos os elementos
+contidos em um grafo são cercados por chaves ``{ }''.
+Existem dois tipos de grafos:
 
-Existem dois tipos...
-
-.IP
-\(bu graph:
+.sp
 .PP
-grafos não direcionados...
+\(bu graph (não direcionados ou ponderados): não
+possuem arestas com direção definida, ou seja, não
+há uma sequência de ligações entre os vértices. Por
+exemplo:
 
-.IP
-\(bu digraph:
+.sp
+.LP
+.I Imagem:
+
+.PSPIC -C images/nondir_graph/nondir.ps
+
+.LP
+.I Código-fonte:
+
+.BD
+graph {
+        rankdir=LR
+
+        X -- Y [label="ponderado"]
+}
+.DE
+
+.LP
+Observe que vértice
+.I X
+não aponta para o vértice
+.I Y
+e tampouco o
+.I Y
+para o
+.I X.
+
+.sp
 .PP
-grafos direcionados...
+\(bu digraph (direcionados): Já os direcionados, como o nome diz,
+possuem direção; começam no vértice inicial e terminam no vértice final. Veja um exemplo:
+
+.LP
+.I Imagem:
+
+.PSPIC -C images/dir_graph/dir.ps
+
+.LP
+.I Código-fonte:
+
+.BD
+digraph {
+        rankdir=LR
+
+        X -> Y [label="direcionado"]
+}
+.DE
+
+.LP
+Nesse caso, o vértice
+.I X
+aponta para o vértice
+.I Y;
+ou seja,
+o ``X'' é o vértice inicial
+e o ``Y'' o vértice final.
 
 .NH 3
 .I node
@@ -102,9 +163,9 @@ Os nodes...
 .PP
 Os edges...
 
-\" inserir aqui, uma imagem
-\" explicativa sobre os assuntos
-\" anteriores
+\# inserir aqui, uma imagem
+\# explicativa sobre os assuntos
+\# anteriores
 
 .NH 1
 Estruturando o documento
