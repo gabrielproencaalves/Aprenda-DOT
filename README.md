@@ -20,7 +20,7 @@ O objetivo deste guia é a familiarização do leitor com os conceitos e usos b�
 
 ## O porquê da criação deste guia
 
-Visto que não há muitas documentações claras e explicativas acerca da linguagem, em português, resolvi escrever uma para o esclarecimento dos recém chegados.
+Visto que não há muitas documentações claras e explicativas acerca da linguagem em português, resolvi escrever uma para o esclarecimento dos recém chegados.
 
 # Referências e materiais externos
 
