@@ -24,3 +24,4 @@ que compõem um documento DOT.
       edge.
   
   Entendendo a documentação.
+    (Ensinar o leitor a interpretar a documentação oficial).
