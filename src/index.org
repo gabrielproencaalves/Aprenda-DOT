@@ -1,5 +1,7 @@
-#+title: Guia Introdutório de /DOT/
-#+author: Gabriel Proença Alves
+#+TITLE: Guia Introdutório de /DOT/
+#+AUTHOR: Gabriel Proença Alves
+#+LANGUAGE: pt
+#+LATEX_HEADER: \usepackage[portuguese]{babel}
 
 * Prólogo
 
@@ -38,6 +40,16 @@ As arestas são traços que interligam pontos; estes pontos possuem
 nomes e posições únicas, e são os chamados nós. Enquanto um grafo é
 toda a área onde os outros dois objetos anteriores são inseridos. Veja
 a seguir um exemplo prático:
+
+-----
+
+Código-Fonte:
+#+BEGIN_EXAMPLE
+1  graph
+2  {
+3    x -- y;
+4  }
+#+END_EXAMPLE
 
 # Inserir um simples exemplo código e seu resultado visual com
 # legendas explicativas.
