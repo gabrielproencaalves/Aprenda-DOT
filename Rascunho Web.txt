@@ -1,0 +1,28 @@
+MSG: Boas vindas!
+MSG: Sobre (Resumido e disfarçado).
+
+MENU (links):
+  --> Tutoriais
+  --> Sobre
+
+RDP:
+  - Licença/Copyright.
+
+---
+
+/
+  index.html
+
+  sobre/index.html
+
+  tutoriais/
+    tut1/index.html
+    tut2/index.html
+    tut3/index.html
+    (...)
+
+  styles/simples.css
+
+  templates/
+    tutorial_header.html
+    tutorial_footer.html
