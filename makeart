@@ -39,7 +39,8 @@ main() {
 
   # Converter rascunho markdown para index.html
   lowdown -sthtml rascunho.md -o $OUTPUTFILE
-
+  sed -i -E -e "s/.*StartFtrMk.*/\<div class=\"footer\"\>/" $OUTPUTFILE
+  sed -i -E -e "s/.*EndFtrMk.*/\<\/div\>/" $OUTPUTFILE
 
   # Remover rascunho markdown
   rm rascunho.md
