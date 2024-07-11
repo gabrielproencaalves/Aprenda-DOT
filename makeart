@@ -1,0 +1,53 @@
+#!/bin/sh
+
+dirssplit() {
+  IFS="$IFS/"
+  echo $INPUTFILE
+  IFS=$(printf " \t\n")
+}
+
+dircount() {
+  echo $(($(dirssplit | wc -w) - 1))
+}
+
+dirnew(){
+  COUNT=$(dircount)
+  NEWDIR="."
+  for dir in $(dirssplit); do
+    NEWDIR="$NEWDIR/$dir"
+    COUNT=$((COUNT - 1))
+    if [ $COUNT -eq 0 ]; then
+      break
+    fi
+  done
+  echo "$NEWDIR/$1"
+}
+
+main() {
+  # Arquivo de conteúdos markdown
+  INPUTFILE=$1
+
+  # Caminho do arquivo final
+  OUTPUTFILE=$(dirnew index.html)
+
+  # Unir cabeçalho, conteúdo e rodapé em um rascunho em markdown
+  cat templates/header.md \
+      $INPUTFILE \
+      templates/footer.md \
+      > rascunho.md
+
+
+  # Converter rascunho markdown para index.html
+  lowdown -sthtml rascunho.md -o $OUTPUTFILE
+
+
+  # Remover rascunho markdown
+  rm rascunho.md
+}
+
+if [ $# -eq 0 ]; then
+  echo "USAGE: makeart path/to/markdown/file.md"
+  exit 1
+fi
+
+main $*
