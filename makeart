@@ -14,11 +14,11 @@ dirnew(){
   COUNT=$(dircount)
   NEWDIR="."
   for dir in $(dirssplit); do
-    NEWDIR="$NEWDIR/$dir"
-    COUNT=$((COUNT - 1))
     if [ $COUNT -eq 0 ]; then
       break
     fi
+    NEWDIR="$NEWDIR/$dir"
+    COUNT=$((COUNT - 1))
   done
   echo "$NEWDIR/$1"
 }
