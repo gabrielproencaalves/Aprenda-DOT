@@ -21,3 +21,7 @@ p {
 	margin: 0;
 	text-indent: calc(4 * 0.444em);
 }
+
+h1, .footer {
+  text-align: center;
+}
