@@ -11,3 +11,7 @@ No entanto, uma nova ideia foi posteriormente alçada. No quarto mês, após o a
 ## Objetivos
 
 Este projeto almeja ensinar e promover o uso da linguagem DOT ao público lusófono.
+
+## Motivos
+
+O Aprenda DOT foi estabelecido porque, infelizmente, há uma grave escassez de materiais didáticos sobre a DOT disponíveis em português. E ferramentas notáveis, como ela, não podem ser negligenciadas devido ao desconhecimento popular. E, por isso, este projeto existe: para reverter esta situação.
