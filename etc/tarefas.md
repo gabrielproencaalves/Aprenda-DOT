@@ -1,0 +1,7 @@
+- [ ] ./sobre/index.html
+- [ ] ./tutoriais/o-que-e-dot/index.html
+- [ ] ./tutoriais/instalando-a-ferramenta/index.html
+- [ ] ./tutoriais/elementos-basicos/index.html
+- [ ] ./tutoriais/estruturando-elementos/index.html
+- [ ] ./tutoriais/ajustando-detalhes/index.html
+- [ ] ./tutoriais/entendendo-a-documentacao/index.html
