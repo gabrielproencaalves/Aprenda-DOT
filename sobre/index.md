@@ -1,6 +1,5 @@
 title: Aprenda DOT | Sobre
 
----
 # Sobre
 
 ## História
