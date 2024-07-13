@@ -30,9 +30,18 @@ main() {
   # Caminho do arquivo final
   OUTPUTFILE=$(dirnew index.html)
 
+  # Informações do cabeçalho do html final
+  HEADINFO="<body>"
+  HEADINFO="$HEADINFO\n<nav>"
+  HEADINFO="$HEADINFO\n<a href=\"\"><===<\/a>"
+  HEADINFO="$HEADINFO\n<a href=\"..\">(VOLTAR)<\/a>"
+  HEADINFO="$HEADINFO\n<a href=\"\">===><\/a>"
+  HEADINFO="$HEADINFO\n<\/nav>"
+  HEADINFO="$HEADINFO\n<hr\/>"
+
   # Unir cabeçalho, conteúdo e rodapé em um rascunho em markdown
   cat templates/header.md \
-      $INPUTFILE \
+      $INPUTFILE          \
       templates/footer.md \
       > rascunho.md
 
@@ -40,7 +49,7 @@ main() {
   # Converter rascunho markdown para index.html
   # Acrescentando alguns detalhes ao html final
   lowdown -sthtml rascunho.md -o $OUTPUTFILE
-  sed -i -E -e "s/<body>/<body>\n<hr\/>/" $OUTPUTFILE
+  sed -i -E -e "s/<body>/$HEADINFO/" $OUTPUTFILE
   sed -i -E -e "s/.*StartFtrMk.*/<div class=\"footer\">/" $OUTPUTFILE
   sed -i -E -e "s/.*EndFtrMk.*/<\/div>/" $OUTPUTFILE
 
