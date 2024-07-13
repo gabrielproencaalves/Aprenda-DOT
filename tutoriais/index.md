@@ -2,4 +2,4 @@ title: Aprenda DOT | Tutoriais
 
 # Catálogo de Tutoriais
 
-A seguir, está a lista de tutoriais da linguage _DOT_. Tenha uma ótima leitura!
+A seguir, está a lista de tutoriais da linguagem _DOT_. Tenha uma ótima leitura!
