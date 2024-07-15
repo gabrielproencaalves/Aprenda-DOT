@@ -9,6 +9,7 @@
 body {
 	max-width: calc(80 * 0.444em);
 	margin: auto;
+	padding: 0.444em;
 	font-size: 12pt;
 	hyphens: auto;
 }
