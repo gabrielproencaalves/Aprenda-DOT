@@ -1,4 +1,5 @@
 - [ ] ./sobre/index.html
+- [x] ./tutoriais/index.html
 - [ ] ./tutoriais/o-que-e-dot/index.html
 - [ ] ./tutoriais/instalando-a-ferramenta/index.html
 - [ ] ./tutoriais/elementos-basicos/index.html
