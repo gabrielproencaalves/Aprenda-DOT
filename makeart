@@ -23,6 +23,15 @@ dirnew(){
   echo "$NEWDIR/$1"
 }
 
+replace() {
+
+# $1 - the old expression
+# $2 - the new expression
+# $3 - the output file
+
+  sed -i -E -e "s/$1/$2/" $3
+}
+
 main() {
   # Arquivo de conteúdos markdown
   INPUTFILE=$1
