@@ -59,9 +59,15 @@ main() {
   # Converter rascunho markdown para index.html
   # Acrescentando alguns detalhes ao html final
   lowdown -sthtml rascunho.md -o $OUTPUTFILE
-  sed -i -E -e "s/<body>/$HEADINFO/" $OUTPUTFILE
-  sed -i -E -e "s/.*StartFtrMk.*/<div class=\"footer\" style="p{text-indent: 0;}">/" $OUTPUTFILE
-  sed -i -E -e "s/.*EndFtrMk.*/<\/div>/" $OUTPUTFILE
+  replace "<body>" "$HEADINFO" $OUTPUTFILE
+
+  # Delimitar conteúdo principal
+  replace ".*;;;StartMainContent.*" "<article>" $OUTPUTFILE
+  replace ".*;;;EndMainContent.*" "<\/article>" $OUTPUTFILE
+
+  # Delimitar conteúdo do rodapé
+  replace ".*;;;StartFooter.*" "<footer>" $OUTPUTFILE
+  replace ".*;;;EndFooter.*" "<\/footer>" $OUTPUTFILE
 
   # Remover rascunho markdown
   rm rascunho.md
