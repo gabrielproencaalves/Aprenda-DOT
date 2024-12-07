@@ -14,7 +14,7 @@ body {
 	hyphens: auto;
 }
 
-article {
+article p {
 	text-indent: calc(4 * 0.444em);
 }
 
