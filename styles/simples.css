@@ -14,15 +14,18 @@ body {
 	hyphens: auto;
 }
 
+article {
+	text-indent: calc(4 * 0.444em);
+}
+
 h1, h2, h3, h4, h5, h6 {
 	margin: 12pt 0;
 }
 
 p {
 	margin: 0;
-	text-indent: calc(4 * 0.444em);
 }
 
-h1, .footer {
+h1, footer {
   text-align: center;
 }
