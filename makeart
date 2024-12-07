@@ -50,7 +50,7 @@ main() {
   # Acrescentando alguns detalhes ao html final
   lowdown -sthtml rascunho.md -o $OUTPUTFILE
   sed -i -E -e "s/<body>/$HEADINFO/" $OUTPUTFILE
-  sed -i -E -e "s/.*StartFtrMk.*/<div class=\"footer\">/" $OUTPUTFILE
+  sed -i -E -e "s/.*StartFtrMk.*/<div class=\"footer\" style="text-indent: 0;">/" $OUTPUTFILE
   sed -i -E -e "s/.*EndFtrMk.*/<\/div>/" $OUTPUTFILE
 
   # Remover rascunho markdown
