@@ -47,6 +47,7 @@ main() {
   HEADINFO="$HEADINFO\n<a href=\"\">===><\/a>"
   HEADINFO="$HEADINFO\n<\/nav>"
   HEADINFO="$HEADINFO\n<hr\/>"
+  HEADINFO="$HEADINFO\n;;;StartMainContent"
 
   # Unir cabeçalho, conteúdo e rodapé em um rascunho em markdown
   cat templates/header.md \
